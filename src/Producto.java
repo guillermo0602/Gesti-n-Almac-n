@@ -1,20 +1,20 @@
 public class Producto {
-    private int idCodigo;
+    private String Codigo;
     private String nombre;
     private double precio;
     private Categoria categoria;
     private int Stock;
 
-    public Producto(int idCodigo, String nombre, double precio, Categoria categoria, int Stock) {
-        this.idCodigo = idCodigo;
+    public Producto(String Codigo, String nombre, double precio, Categoria categoria, int Stock) {
+        this.Codigo = Codigo;
         this.nombre = nombre;
         this.precio = precio;
         this.categoria = categoria;
         this.Stock = Stock;
     }
 
-    public int getIdCodigo() {
-        return idCodigo;
+    public String getCodigo() {
+        return Codigo;
     }
 
     public String getNombre() {
@@ -48,7 +48,7 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto{" +
-                "idCodigo=" + idCodigo +
+                "Codigo=" + Codigo +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
                 ", categoria=" + categoria +

@@ -8,6 +8,6 @@ public class Inventario {
     }
 
     public void agregarProducto(Producto producto) {
-        inventario.put(producto.getIdCodigo(),producto);
+        inventario.put(producto.getCodigo(),producto);
     }
 }
