@@ -1,5 +1,5 @@
-public class Categoria {
-    public enum categoria{
-        Laptops,smartphones,tablets
-    }
+public enum Categoria {
+    laptops,
+    smartphones,
+    tablets,
 }
