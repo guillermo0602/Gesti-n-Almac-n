@@ -1,5 +1,6 @@
 public enum Categoria {
-    laptops,
-    smartphones,
-    tablets,
+    LAPTOPS,
+    SMARTPHONE,
+    TABLETS
 }
+
