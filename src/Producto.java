@@ -2,17 +2,20 @@ public class Producto {
     private String Codigo;
     private String Nombre;
     private double Precio;
-    private Categoria categoriaProducto;
+    private Categoria categoria;
     private int Stock;
 
     //Constructor
-    public Producto(String codigo, String nombre, double precio, Categoria categoriaProducto, int stock) {
+
+    public Producto(String codigo, String nombre, double precio, Categoria categoria, int stock) {
         Codigo = codigo;
         Nombre = nombre;
         Precio = precio;
-        categoriaProducto = categoriaProducto;
+        this.categoria = categoria;
         Stock = stock;
     }
+
+
 
     //Getters
     public String getCodigo() {
@@ -27,8 +30,8 @@ public class Producto {
         return Precio;
     }
 
-    public Categoria getCategoriaProducto() {
-        return categoriaProducto;
+    public Categoria getCategoria() {
+        return categoria;
     }
 
     public int getStock() {
@@ -57,7 +60,7 @@ public class Producto {
                 "Codigo='" + Codigo + '\'' +
                 ", Nombre='" + Nombre + '\'' +
                 ", Precio=" + Precio +
-                ", categoriaProducto=" + categoriaProducto +
+                ", categoria=" + categoria +
                 ", Stock=" + Stock +
                 '}';
     }
